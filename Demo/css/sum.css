@@ -1,0 +1,53 @@
+#sum{
+	width: 100%;
+	height: 1000px;
+	background-image: url(../img/12.jpg);
+	background-size: cover;
+}
+#head{
+	width: 100%;
+	height: 3%;
+	font-weight: bold;<!-- 设置字体加粗 -->
+	align: right;
+	padding: 10px;
+}
+#user{
+	font-weight: normal;
+	color: cyan;
+}
+#head a{
+	margin-left: 20px;
+	color: #FFFFFF;
+	font-size: 13px;
+}
+#set{
+	font-weight: normal;
+	color: #SSS;
+}
+#more{
+	font-weight: normal;
+	color: #00FFFF;
+}
+#search{
+	/*搜索栏*/
+	width:100% ;
+	height: 29%;
+	background: white;
+	text-align: center;
+}
+#img{
+	width: 536px;
+	height: 40px;
+}
+#bt{
+	width: 100px;
+	height: 38px;
+	border: 1px solid #3388FF;
+	background-color: #33888FF;
+	color: white;
+	
+}
+#sh{
+	width: 536px;
+	height: 40px;
+}

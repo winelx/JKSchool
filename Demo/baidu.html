@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百度一下，你就知道 </title>
+		<link rel="shortcut icon" href="" type="img/x-icon" />
+		<link rel="stylesheet" href="css/baidu.css" />
+		<style type="text/css">
+			.dropbtn {
+				background-color: #0997F7;
+				color: white;
+				padding: 12px;
+				font-size: 15px;
+				border: none;
+				cursor: pointer;
+				width: 90px;
+				padding: 5px;
+			}
+			
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+			/* 隐藏列表 */
+			
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 90px;
+				min-height: 700px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			/* 列表样式*/
+			.dropdown-content a {
+				color: black;
+				padding: 10px 12px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			
+			.center {
+				text-align: center;
+				padding-top: 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="wrpper">
+			<div class="dropdown" style="float:right;">
+				<button class="dropbtn">更多产品</button>
+				<div class="dropdown-content">
+					<img src="img/music.png" style="padding-left: 25px;"/><a href="http://music.baidu.com/" class="center" >音乐</a>
+					<a href="http://image.baidu.com/" class="center">图片</a>
+					<a href="http://zhidao.baidu.com/" class="center">知道</a>
+					<a href="http://wenku.baidu.com/" class="center">文库</a>
+				</div>
+			</div>
+			<nav style="float: right; padding-right: 10px; padding-top: 4px;">
+				<a href="http://www.nuomi.com/">糯米</a>
+				<a href="http://tieba.baidu.com/">贴吧</a>
+				<a href="http://www.hao123.com/">hao123</a>
+				<a href="http://map.baidu.com/">地图</a>
+				<a href="http://v.baidu.com/">视频</a>
+				<a href="javascript:;">设置</a>
+			</nav>
+			<div class="content">
+				<img src="img/bd_logo1.png" alt="百度" width="270" height="129" />
+				<form action="https://wwww.baidu.com/s" method="get" target="_blank">
+					<input type="text" id="" value="" name="wd" /><button>百度一下</button>
+				</form>
+			</div>
+			<footer>
+				<p>
+					<a href="https://www.baidu.com/cache/sethelp/index.html">把百度设为首页</a>
+					<a>关于百度</a>
+					<a>About Baidu</a>
+				</p>
+				<p>
+					<span>©2016 Baidu </span>
+					<a href="https://www.baidu.com/duty/">使用百度前必读</a>
+					<a href="http://jianyi.baidu.com/">意见反馈</a>
+					<span>京ICP证030173号 </span>
+
+				</p>
+			</footer>
+	</body>
+
+</html>

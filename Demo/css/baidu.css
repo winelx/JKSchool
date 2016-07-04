@@ -1,0 +1,35 @@
+body{
+	font: 12x arial;
+	overflow-y:scroll
+
+}
+header{
+	overflow: hidden;	
+}
+header nav{
+	width: 350px;
+	padding-top: 3px;
+	float: right;
+}
+header nav a{
+	margin-left: 12px;
+}
+.content{
+	text-align: center;
+	padding-top: 120px;
+}
+.content input{
+	width: 450px;
+	height: 34px;
+}
+.content button{
+	width: 100px;
+	height: 40px;
+	background-color:#11A0FF ;
+	border: 0;
+		color: white;
+}
+footer{
+	padding-top: 50px;
+	text-align: center;
+}
