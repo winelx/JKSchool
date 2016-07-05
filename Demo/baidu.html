@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>百度一下，你就知道 </title>
@@ -15,6 +16,12 @@
 				cursor: pointer;
 				width: 90px;
 				padding: 5px;
+				color: #000000;
+			}
+			
+			.dropbtn:hover {
+				background-color: #F5F5F5;
+				color: #000000;
 			}
 			
 			.dropdown {
@@ -28,10 +35,11 @@
 				position: absolute;
 				background-color: #f9f9f9;
 				min-width: 90px;
-				min-height: 700px;
+				min-height: 1000px;
 				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 			}
 			/* 列表样式*/
+			
 			.dropdown-content a {
 				color: black;
 				padding: 10px 12px;
@@ -47,16 +55,20 @@
 				text-align: center;
 				padding-top: 1px;
 			}
+			
+			.foter {
+				padding-top: 160px;
+			}
 		</style>
 	</head>
 
 	<body>
-		
+
 		<div class="wrpper">
 			<div class="dropdown" style="float:right;">
-				<button class="dropbtn">更多产品</button>
+				<button id="button" class="dropbtn">更多产品</button>
 				<div class="dropdown-content">
-					<img src="img/music.png" style="padding-left: 25px;"/><a href="http://music.baidu.com/" class="center" >音乐</a>
+					<img src="img/music.png" style="padding-left: 25px;" /><a href="http://music.baidu.com/" class="center">音乐</a>
 					<a href="http://image.baidu.com/" class="center">图片</a>
 					<a href="http://zhidao.baidu.com/" class="center">知道</a>
 					<a href="http://wenku.baidu.com/" class="center">文库</a>
@@ -76,7 +88,21 @@
 					<input type="text" id="" value="" name="wd" /><button>百度一下</button>
 				</form>
 			</div>
-			<footer>
+			<div align="center" style="padding-top: 300px; padding-bottom: 0;">
+				<div>
+					<div style="float: left; margin:30px 0px 10px 760px;">
+						<img src="img/nuomi.png" />
+					</div>
+					<div>
+						<p><b>手机百度</b></p>
+						<p><span>快人一步</span></p>
+					</div>
+				</div>
+				<div style="float: left; margin:30px 0px 20px 120px ;">
+					<img src="img/nuomi.png" />
+				</div>
+			</div>
+			<footer class="foter">
 				<p>
 					<a href="https://www.baidu.com/cache/sethelp/index.html">把百度设为首页</a>
 					<a>关于百度</a>
