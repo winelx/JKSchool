@@ -1,35 +1,41 @@
-body{
+body {
 	font: 12x arial;
-	overflow-y:scroll
+	overflow-y: scroll;
+	height: 100%;
+	min-height: 600px;
+	min-width: 810px;
+	position: relative;
+	margin: 0;
+}
 
+header {
+	overflow: hidden;
 }
-header{
-	overflow: hidden;	
-}
-header nav{
+
+header nav {
 	width: 350px;
 	padding-top: 3px;
 	float: right;
 }
-header nav a{
-	margin-left: 12px;
+
+header nav a {
+	margin-left: 20px;
 }
-.content{
+
+.content {
 	text-align: center;
 	padding-top: 120px;
 }
-.content input{
+
+.content input {
 	width: 450px;
 	height: 34px;
 }
-.content button{
+
+.content button {
 	width: 100px;
 	height: 40px;
-	background-color:#11A0FF ;
+	background-color: #11A0FF;
 	border: 0;
-		color: white;
-}
-footer{
-	padding-top: 50px;
-	text-align: center;
+	color: white;
 }

@@ -4,29 +4,40 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>百度一下，你就知道 </title>
-		<link rel="shortcut icon" href="" type="img/x-icon" />
+		<link rel="shortcut icon" href="img/apple.ico" type="img/x-icon" />
 		<link rel="stylesheet" href="css/baidu.css" />
 		<style type="text/css">
 			.dropbtn {
 				background-color: #0997F7;
 				color: white;
-				padding: 12px;
 				font-size: 15px;
 				border: none;
 				cursor: pointer;
 				width: 90px;
 				padding: 5px;
-				color: #000000;
+			}
+			
+			.set {
+				position: relative;
+				display: inline-block;
+			}
+			
+			.set-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 40px;
+				min-height: 150px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.set:hover .set-content {
+				display: block;
 			}
 			
 			.dropbtn:hover {
 				background-color: #F5F5F5;
 				color: #000000;
-			}
-			
-			.dropdown {
-				position: relative;
-				display: inline-block;
 			}
 			/* 隐藏列表 */
 			
@@ -38,13 +49,14 @@
 				min-height: 1000px;
 				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 			}
-			/* 列表样式*/
 			
-			.dropdown-content a {
-				color: black;
-				padding: 10px 12px;
-				text-decoration: none;
-				display: block;
+			.dropdown-contents {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 90px;
+				min-height: 1000px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 			}
 			
 			.dropdown:hover .dropdown-content {
@@ -54,55 +66,104 @@
 			.center {
 				text-align: center;
 				padding-top: 1px;
+				margin-top: 1px;
+				font: 10px;
 			}
 			
 			.foter {
 				padding-top: 160px;
+			}
+			
+			#a {
+				font-family: "微软雅黑";
+				color: #000000;
+				font-size: 10px;
+				padding-right: 12px;
+			}
+			
+			#setting {
+				font-size: 12px;
+				padding-right: 30px;
+				padding-top: 30px;
+				font-weight: 100;
+			}
+			
+			#a:hover {
+				color: #0997F7;
 			}
 		</style>
 	</head>
 
 	<body>
 
-		<div class="wrpper">
-			<div class="dropdown" style="float:right;">
-				<button id="button" class="dropbtn">更多产品</button>
-				<div class="dropdown-content">
-					<img src="img/music.png" style="padding-left: 25px;" /><a href="http://music.baidu.com/" class="center">音乐</a>
-					<a href="http://image.baidu.com/" class="center">图片</a>
-					<a href="http://zhidao.baidu.com/" class="center">知道</a>
-					<a href="http://wenku.baidu.com/" class="center">文库</a>
+		<div class="dropdown" style="float:right;">
+			<button id="button" class="dropbtn">更多产品</button>
+			<div class="dropdown-content">
+				<img src="img/music.png" href="" style="padding-left: 25px">
+				<p style=" margin-top:1px" align="center">音乐</p>
+				<hr style="background-color: #F9F9F9; padding-left: 20%; padding-right: 20%;" />
+				<img src="img/photo.png" href="" style="padding-left: 25px">
+				<p href="http://image.baidu.com/" class="center">图片</p>
+				<hr />
+				<img src="img/xiaoxi.png" href="" style="padding-left: 25px">
+				<p href="http://zhidao.baidu.com/" class="center">知道</p>
+				<hr />
+				<img src="img/wenku.png" href="" style="padding-left: 25px">
+				<p href="http://wenku.baidu.com/" class="center">文库</p>
+				<hr />
+				<img src="img/phb7.png" href="" style="padding-left: 25px">
+				<p href="http://top.baidu.com/" class="center">风云榜</p>
+				<hr />
+				<img src="img/推广.png" href="" style="padding-left: 25px">
+				<p href="http://e.baidu.com/?refer=888" class="center">百度推广</p>
+				<hr />
+				<span style="font-size: 10px;padding-left: 30px;"><a href="https://www.baidu.com/more/">全部产品</a></span>
+			</div>
+		</div>
+		<nav style="float: right; padding-right: 10px; padding-top: 4px;">
+			<a href="http://www.nuomi.com/" id="a">糯米</a>
+			<a href="http://news.baidu.com/" id="a">新闻</a>
+			<a href="http://www.hao123.com/" id="a">hao123</a>
+			<a href="http://tieba.baidu.com/" id="a">贴吧</a>
+			<a href="http://www.hao123.com/" id="a">hao123</a>
+			<a href="http://map.baidu.com/" id="a">地图</a>
+			<a href="http://v.baidu.com/" id="a">视频</a>
+			<a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" id="a">登陆</a>
+			<div class="set">
+				<a href="http://v.baidu.com/" id="a"> 设置</a>
+				<div class="set-content">
+					<a id="setting">搜索设置</a><br />
+					<a id="setting">高级搜索</a><br />
+					<a id="setting">关闭预测</a><br />
+					<a id="setting">搜索历史</a><br />
 				</div>
 			</div>
-			<nav style="float: right; padding-right: 10px; padding-top: 4px;">
-				<a href="http://www.nuomi.com/">糯米</a>
-				<a href="http://tieba.baidu.com/">贴吧</a>
-				<a href="http://www.hao123.com/">hao123</a>
-				<a href="http://map.baidu.com/">地图</a>
-				<a href="http://v.baidu.com/">视频</a>
-				<a href="javascript:;">设置</a>
-			</nav>
-			<div class="content">
-				<img src="img/bd_logo1.png" alt="百度" width="270" height="129" />
-				<form action="https://wwww.baidu.com/s" method="get" target="_blank">
-					<input type="text" id="" value="" name="wd" /><button>百度一下</button>
-				</form>
-			</div>
-			<div align="center" style="padding-top: 300px; padding-bottom: 0;">
-				<div>
-					<div style="float: left; margin:30px 0px 10px 760px;">
-						<img src="img/nuomi.png" />
-					</div>
-					<div>
-						<p><b>手机百度</b></p>
-						<p><span>快人一步</span></p>
-					</div>
-				</div>
-				<div style="float: left; margin:30px 0px 20px 120px ;">
-					<img src="img/nuomi.png" />
+		</nav>
+
+		<div class="content">
+			<img src="img/bd_logo1.png" alt="百度" width="270" height="129" />
+			<form action="https://wwww.baidu.com/s" method="get" target="_blank">
+				<input type="text" id="" value="" name="wd" /><button>百度一下</button>
+			</form>
+		</div>
+		<footer style="font-size: 12px;position: absolute; width: 600px; left: 50%;margin-left: -300px; bottom:0 ;">
+			<div>
+				<div style="float: left;">
+					<img src="img/nuomi.png" style="width: 60px;height: 60px;">
 				</div>
 			</div>
-			<footer class="foter">
+			<div style="float: left; ">
+				<p><b>百度糯米</b></p>
+				<p><span>一元大餐</span></p>
+			</div>
+			<div style="float: left; ">
+				<img src="img/nuomi.png" style="width: 60px;height: 60px;">
+			</div>
+			<div style="float: left; ">
+				<p><b>手机百度</b></p>
+				<p><span>快人一步</span></p>
+			</div>
+			<div style="float: left; padding-left: 10px;">
 				<p>
 					<a href="https://www.baidu.com/cache/sethelp/index.html">把百度设为首页</a>
 					<a>关于百度</a>
@@ -113,9 +174,13 @@
 					<a href="https://www.baidu.com/duty/">使用百度前必读</a>
 					<a href="http://jianyi.baidu.com/">意见反馈</a>
 					<span>京ICP证030173号 </span>
-
 				</p>
-			</footer>
+				<p>
+					<span>京公网安备11000002000001号</span>
+				</p>
+			</div>
+		</footer>
+
 	</body>
 
 </html>
