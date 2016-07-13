@@ -1,0 +1,70 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.box1-1 {
+	margin: 100px;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	background-color: aliceblue;
+	border: 5px dashed red;
+}
+
+.box1-2 {
+	width: 100px;
+	height: 100px;
+	background-color: #0997F7;
+	overflow: overlay;/*对盒子中的文字进行处理，截取，下拉等,*/
+}
+
+.box2-1 {
+	margin: 100px;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	background-color: aliceblue;
+	border: 5px dashed red;
+}
+
+.box2-2 {
+	width: 100px;
+	height: 100px;
+	;
+	background-color: #0997F7;
+	text-align: center;
+}
+
+.box2-3 {
+	width: 130px;
+	height: 130px;
+	margin: 100px;
+}
+.box3-1 {
+	margin: 100px;
+	padding: 10px;
+	width: 130px;
+	height: 130px;
+	background-color: aliceblue;
+	border: 5px dashed red;
+	box-sizing: border-box;
+}
+
+.box3-2 {
+	width: 100px;
+	height: 100px;
+	background-color: #0997F7;
+	text-align: center;
+}
+.left{
+	float: left;
+	width: 250px;
+	background-color: antiquewhite;
+}
+.right{
+	float: right;
+	background-color: #11A0FF;
+	width: 250px;
+
+}
